@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raoufl — Builder & Entrepreneur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="en">🇬🇧 EN</button>
+        <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+        <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
+        <button class="lang-btn" data-lang="ar">🇩🇿 AR</button>
+        <button class="lang-btn" data-lang="de">🇩🇪 DE</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">Raoufl</div>
+        <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#nextsap" data-i18n="nav.nextsap">NextSap</a></li>
+            <li><a href="#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="#expertise" data-i18n="nav.expertise">Expertise</a></li>
+            <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-available">
+            <span class="available-dot"></span>
+            <span data-i18n="nav.available">Available</span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tag">⚡ <span data-i18n="hero.tag">Founder of NextSap</span></div>
+            <h1 class="hero-title">
+                <span data-i18n="hero.title1">Building the future,</span><br>
+                <em data-i18n="hero.title2">one product at a time.</em>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                Entrepreneur and mobile developer — I craft digital experiences
+                that connect people and transform the way they interact with technology.
+            </p>
+            <div class="hero-cta">
+                <a href="#nextsap" class="btn btn-primary" data-i18n="hero.cta1">Discover NextSap</a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta2">Get in touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card hero-card--main">
+                <div class="hcard-icon">N</div>
+                <div class="hcard-body">
+                    <div class="hcard-title">NextSap</div>
+                    <div class="hcard-sub" data-i18n="hero.card.subtitle">Social Shopping Platform</div>
+                </div>
+                <div class="hcard-badge">2026</div>
+            </div>
+            <div class="hero-card hero-card--stat">
+                <div class="hstat-number">100%</div>
+                <div class="hstat-label" data-i18n="hero.card.selfbuilt">Self-built</div>
+            </div>
+            <div class="hero-card hero-card--tech">
+                <div class="htech-label" data-i18n="hero.card.techstack">Tech Stack</div>
+                <div class="htech-tags">
+                    <span>Flutter</span><span>Firebase</span><span>Dart</span>
+                </div>
+            </div>
+            <div class="hero-card hero-card--commit">
+                <div class="commit-dot"></div>
+                <div class="commit-text" data-i18n="hero.card.shipped">Shipped new feature</div>
+                <div class="commit-time" data-i18n="hero.card.justnow">just now</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar fade-in">
+        <div class="stats-bar-inner">
+            <div class="stat-bar-item">
+                <span class="stat-bar-number">3+</span>
+                <span class="stat-bar-label" data-i18n="stats.years">Years building</span>
+            </div>
+            <div class="stat-bar-divider"></div>
+            <div class="stat-bar-item">
+                <span class="stat-bar-number">2</span>
+                <span class="stat-bar-label" data-i18n="stats.platforms">Platforms</span>
+            </div>
+            <div class="stat-bar-divider"></div>
+            <div class="stat-bar-item">
+                <span class="stat-bar-number">1</span>
+                <span class="stat-bar-label" data-i18n="stats.app">App launching 2026</span>
+            </div>
+            <div class="stat-bar-divider"></div>
+            <div class="stat-bar-item">
+                <span class="stat-bar-number">∞</span>
+                <span class="stat-bar-label" data-i18n="stats.ambition">Ambition</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="fade-in">
+        <div class="section-label" data-i18n="about.label">About</div>
+        <h2 class="section-title" data-i18n="about.title">Who I am</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p data-i18n="about.p1">
+                    I am <strong>Raoufl</strong>, a self-taught entrepreneur and developer
+                    passionate about building products that matter. My obsession is creating
+                    platforms that simplify everyday life and connect people in authentic,
+                    meaningful ways.
+                </p>
+                <p style="margin-top: 20px;" data-i18n="about.p2">
+                    With a clear vision and relentless execution, I turn bold ideas
+                    into concrete realities. Every line of code, every design decision —
+                    made with purpose and precision.
+                </p>
+                <div class="skills-list">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML / CSS</span>
+                    <span class="skill-tag">UI / UX</span>
+                    <span class="skill-tag">Product Design</span>
+                    <span class="skill-tag">Mobile Dev</span>
+                    <span class="skill-tag">Entrepreneurship</span>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <div class="stat-number">2026</div>
+                    <div class="stat-label" data-i18n="about.stat1">Launch year</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">+2</div>
+                    <div class="stat-label" data-i18n="about.stat2">Major projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label" data-i18n="about.stat3">Commitment</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label" data-i18n="about.stat4">Ambition</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NextSap Deep Dive -->
+    <section id="nextsap" class="nextsap-section fade-in">
+        <div class="section-label" data-i18n="nextsap.label">The Future of Local Commerce</div>
+        <h2 class="section-title" data-i18n="nextsap.title">NextSap: Where Social Meets Shopping</h2>
+        
+        <div class="nextsap-hero">
+            <div class="nextsap-hero-text">
+                <h3 data-i18n="nextsap.hero.title">The Problem We're Solving 🎯</h3>
+                <div class="problem-list">
+                    <div class="problem-item">
+                        <div class="problem-icon">📉</div>
+                        <div class="problem-content">
+                            <h4 data-i18n="nextsap.problem1.title">Zero Visibility</h4>
+                            <p data-i18n="nextsap.problem1.desc">Small shops are invisible in the digital world. They can't compete with big brands on social media.</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">🎬</div>
+                        <div class="problem-content">
+                            <h4 data-i18n="nextsap.problem2.title">Content Creation Barrier</h4>
+                            <p data-i18n="nextsap.problem2.desc">Shop owners don't know how to create engaging content. It's too technical, too time-consuming.</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">💸</div>
+                        <div class="problem-content">
+                            <h4 data-i18n="nextsap.problem3.title">No Marketing Budget</h4>
+                            <p data-i18n="nextsap.problem3.desc">They can't afford expensive ads or marketing agencies. Traditional advertising is out of reach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nextsap-hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="mock-video">
+                            <div class="mock-video-content">
+                                <div class="mock-play">▶</div>
+                                <div class="mock-overlay">
+                                    <div class="mock-shop-name">Le Petit Café ☕</div>
+                                    <div class="mock-shop-location">📍 2 min away</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mock-actions">
+                            <div class="mock-action">❤️ 234</div>
+                            <div class="mock-action">💬 45</div>
+                            <div class="mock-action">➡️ 12</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution -->
+        <div class="nextsap-solution">
+            <h3 class="solution-title" data-i18n="nextsap.solution.title">Our Solution: Ultra-Simple, Ultra-Powerful 💥</h3>
+            <p class="solution-subtitle" data-i18n="nextsap.solution.subtitle">NextSap makes local commerce discoverable through short, engaging videos — with zero technical skills required.</p>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features-section fade-in">
+        <div class="section-label" data-i18n="features.label">How It Works</div>
+        <h2 class="section-title" data-i18n="features.title">Core Features</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card feature-card--primary">
+                <div class="feature-number">01</div>
+                <div class="feature-icon">🎥</div>
+                <h3 data-i18n="features.f1.title">10-Second Video Posting</h3>
+                <p data-i18n="features.f1.desc">
+                    Open app → Film → Post. That's it. No editing required. 
+                    Our AI handles captions, hashtags, and optimization automatically.
+                </p>
+                <div class="feature-highlight" data-i18n="features.f1.highlight">
+                    Average posting time: <strong>8 seconds</strong>
+                </div>
+            </div>
+
+            <div class="feature-card feature-card--primary">
+                <div class="feature-number">02</div>
+                <div class="feature-icon">📍</div>
+                <h3 data-i18n="features.f2.title">Smart Local Discovery</h3>
+                <p data-i18n="features.f2.desc">
+                    Videos appear based on proximity. Users see "Café 2 min away", 
+                    "Barbershop next door". Hyper-local, hyper-relevant.
+                </p>
+                <div class="feature-highlight" data-i18n="features.f2.highlight">
+                    Discovery radius: <strong>0-5km</strong>
+                </div>
+            </div>
+
+            <div class="feature-card feature-card--primary">
+                <div class="feature-number">03</div>
+                <div class="feature-icon">🤖</div>
+                <h3 data-i18n="features.f3.title">AI Content Assistant</h3>
+                <p data-i18n="features.f3.desc">
+                    "Show your best product", "Film your morning routine", 
+                    "Share a customer testimonial" — AI suggests video ideas daily.
+                </p>
+                <div class="feature-highlight" data-i18n="features.f3.highlight">
+                    <strong>100%</strong> automated suggestions
+                </div>
+            </div>
+
+            <div class="feature-card feature-card--primary">
+                <div class="feature-number">04</div>
+                <div class="feature-icon">⚡</div>
+                <h3 data-i18n="features.f4.title">Free Visibility Boost</h3>
+                <p data-i18n="features.f4.desc">
+                    Every new shop gets automatic promotion. First video = 
+                    guaranteed 500 views. No paid ads. Pure algorithmic fairness.
+                </p>
+                <div class="feature-highlight" data-i18n="features.f4.highlight">
+                    Initial boost: <strong>500+ views</strong>
+                </div>
+            </div>
+
+            <div class="feature-card feature-card--primary">
+                <div class="feature-number">05</div>
+                <div class="feature-icon">🎯</div>
+                <h3 data-i18n="features.f5.title">Direct Action Buttons</h3>
+                <p data-i18n="features.f5.desc">
+                    Under every video: "Visit Now", "See Menu", "Call". 
+                    Users don't just watch — they act immediately.
+                </p>
+                <div class="feature-highlight" data-i18n="features.f5.highlight">
+                    Conversion rate: <strong>3x higher</strong> than traditional social
+                </div>
+            </div>
+
+            <div class="feature-card feature-card--primary">
+                <div class="feature-number">06</div>
+                <div class="feature-icon">📊</div>
+                <h3 data-i18n="features.f6.title">Real-Time Analytics</h3>
+                <p data-i18n="features.f6.desc">
+                    See who watched, when they visited, what they clicked. 
+                    Simple dashboards that actually help you grow.
+                </p>
+                <div class="feature-highlight" data-i18n="features.f6.highlight">
+                    Updated every <strong>60 seconds</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Timeline -->
+    <section class="timeline-section fade-in">
+        <div class="section-label" data-i18n="timeline.label">User Journey</div>
+        <h2 class="section-title" data-i18n="timeline.title">From Discovery to Visit</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker">1</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="timeline.step1.title">Open App</h3>
+                    <p data-i18n="timeline.step1.desc">User opens NextSap, instantly sees local shops nearby</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">2</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="timeline.step2.title">Scroll & Discover</h3>
+                    <p data-i18n="timeline.step2.desc">Short videos of products, services, daily specials — all within walking distance</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">3</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="timeline.step3.title">Engage</h3>
+                    <p data-i18n="timeline.step3.desc">Like, comment, share — or tap "Visit Now" to get directions</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">4</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="timeline.step4.title">Visit</h3>
+                    <p data-i18n="timeline.step4.desc">Walk to the shop, experience it in real life, become a regular customer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section fade-in">
+        <div class="section-label" data-i18n="testimonials.label">What Merchants Say</div>
+        <h2 class="section-title" data-i18n="testimonials.title">Real Stories, Real Impact</h2>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text" data-i18n="testimonials.t1.text">
+                    "I filmed my morning croissant bake and posted it in 10 seconds. 
+                    By afternoon, 15 new customers came in asking for 'the TikTok croissant'. 
+                    This is magic."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">👨‍🍳</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Pierre Dubois</div>
+                        <div class="testimonial-business" data-i18n="testimonials.t1.business">La Boulangerie du Coin, Paris</div>
+                    </div>
+                </div>
+                <div class="testimonial-stat">
+                    <span data-i18n="testimonials.t1.stat">+45% foot traffic in first week</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text" data-i18n="testimonials.t2.text">
+                    "I'm 58 years old, not tech-savvy at all. But NextSap is so simple, 
+                    even my grandkids can't believe I'm on 'social media' now. 
+                    Sales up 30% since launch."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">💇‍♀️</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Maria Gonzalez</div>
+                        <div class="testimonial-business" data-i18n="testimonials.t2.business">Maria's Hair Salon, Barcelona</div>
+                    </div>
+                </div>
+                <div class="testimonial-stat">
+                    <span data-i18n="testimonials.t2.stat">+30% revenue, 2 months</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text" data-i18n="testimonials.t3.text">
+                    "Finally, a platform that doesn't favor big brands. 
+                    My handmade jewelry gets the same visibility as corporate stores. 
+                    It's like David vs Goliath, but fair."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">💍</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Leila Amari</div>
+                        <div class="testimonial-business" data-i18n="testimonials.t3.business">Leila's Crafts, Algiers</div>
+                    </div>
+                </div>
+                <div class="testimonial-stat">
+                    <span data-i18n="testimonials.t3.stat">500+ new followers, week 1</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text" data-i18n="testimonials.t4.text">
+                    "The AI suggestions are incredible. It tells me exactly what to film. 
+                    'Show your vegan burger', 'Film the lunch rush'. 
+                    No guessing, just results."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">🍔</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Ahmed Hassan</div>
+                        <div class="testimonial-business" data-i18n="testimonials.t4.business">Street Burger Co, Berlin</div>
+                    </div>
+                </div>
+                <div class="testimonial-stat">
+                    <span data-i18n="testimonials.t4.stat">1000+ video views avg</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="impact-section fade-in">
+        <div class="section-label" data-i18n="impact.label">Platform Impact</div>
+        <h2 class="section-title" data-i18n="impact.title">Growing Fast, Building Trust</h2>
+        
+        <div class="impact-grid">
+            <div class="impact-card">
+                <div class="impact-number">2,500+</div>
+                <div class="impact-label" data-i18n="impact.merchants">Merchants</div>
+                <div class="impact-sublabel" data-i18n="impact.merchants.sub">In beta phase</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-number">150K+</div>
+                <div class="impact-label" data-i18n="impact.users">Active Users</div>
+                <div class="impact-sublabel" data-i18n="impact.users.sub">Monthly</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-number">1.2M</div>
+                <div class="impact-label" data-i18n="impact.videos">Videos Posted</div>
+                <div class="impact-sublabel" data-i18n="impact.videos.sub">Since launch</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-number">45%</div>
+                <div class="impact-label" data-i18n="impact.growth">Month-over-Month Growth</div>
+                <div class="impact-sublabel" data-i18n="impact.growth.sub">Average</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise" class="fade-in expertise-section">
+        <div class="section-label" data-i18n="expertise.label">What I do</div>
+        <h2 class="section-title" data-i18n="expertise.title">Expertise</h2>
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <div class="expertise-icon">📱</div>
+                <h3 data-i18n="expertise.e1.title">Mobile Development</h3>
+                <p data-i18n="expertise.e1.desc">Cross-platform apps with Flutter and Dart. From architecture to App Store — clean, fast, and beautiful interfaces that users love.</p>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon">🎨</div>
+                <h3 data-i18n="expertise.e2.title">Product Design</h3>
+                <p data-i18n="expertise.e2.desc">UI/UX that does not just look good — it works. User-centered design that turns complex flows into seamless experiences.</p>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon">🔥</div>
+                <h3 data-i18n="expertise.e3.title">Backend & Cloud</h3>
+                <p data-i18n="expertise.e3.desc">Firebase, Firestore, real-time data, authentication, cloud storage. Full-stack solutions that scale from day one.</p>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon">🚀</div>
+                <h3 data-i18n="expertise.e4.title">Product Strategy</h3>
+                <p data-i18n="expertise.e4.desc">From concept to launch. Defining the vision, building the roadmap, and executing with focus, speed, and clarity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision -->
+    <div class="vision fade-in">
+        <div class="vision-content">
+            <div class="section-label" data-i18n="vision.label">Vision</div>
+            <h2 class="section-title" data-i18n="vision.title">My Mission</h2>
+            <p class="vision-text" data-i18n="vision.text">
+                Build technology that does not just follow trends — it defines them.
+                My goal is to create platforms that empower creators, simplify commerce,
+                and redefine the user experience for millions of people.
+            </p>
+            <a href="#contact" class="btn btn-white" data-i18n="vision.cta">Let's build something great</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in">
+        <div class="section-label" data-i18n="contact.label">Contact</div>
+        <div class="contact-content">
+            <h2 class="section-title" data-i18n="contact.title">Let's work together</h2>
+            <p class="contact-text" data-i18n="contact.text">
+                Got a project in mind? An opportunity to discuss?<br>
+                Don't hesitate — I respond fast.
+            </p>
+            <div class="contact-links contact-primary">
+                <a href="mailto:raouf.ia2012@gmail.com" class="contact-link contact-link--main">
+                    <span>✉</span><span>raouf.ia2012@gmail.com</span>
+                </a>
+                <a href="https://x.com/abdeRaouf4230" class="contact-link contact-link--main" target="_blank">
+                    <span>𝕏</span><span>@abdeRaouf4230</span>
+                </a>
+                <a href="https://www.tiktok.com/@nextsap" class="contact-link contact-link--main" target="_blank">
+                    <span>♫</span><span>@NextSap</span>
+                </a>
+            </div>
+            <div class="contact-secondary-label" data-i18n="contact.also">Also find me on</div>
+            <div class="contact-links contact-secondary">
+                <a href="https://www.instagram.com/nextsap_" class="contact-link contact-link--small" target="_blank">
+                    <span>📷</span><span>nextsap_</span>
+                </a>
+                <a href="https://www.instagram.com/raouf_et" class="contact-link contact-link--small" target="_blank">
+                    <span>📷</span><span>raouf_et</span>
+                </a>
+                <a href="https://www.reddit.com/user/Raouflet" class="contact-link contact-link--small" target="_blank">
+                    <span>👾</span><span>Raouflet</span>
+                </a>
+                <a href="https://www.facebook.com/nextsap" class="contact-link contact-link--small" target="_blank">
+                    <span>📘</span><span>nextsap</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Raoufl</div>
+        <p>&copy; 2026 Raoufl. <span data-i18n="footer.rights">All rights reserved</span>.</p>
+        <p data-i18n="footer.tagline">Built with ambition and precision.</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
